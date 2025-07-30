@@ -81,6 +81,57 @@
       margin-top: 1rem;
     }
 
+    .form-section {
+      background: white;
+      padding: 3rem 1rem;
+      margin: 3rem -1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .embedded-form {
+      border: none;
+      width: 100%;
+      height: 800px;
+      border-radius: 8px;
+    }
+
+    .video-section {
+      background: white;
+      padding: 3rem 1rem;
+      margin: 3rem -1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .video-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .video-container h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .demo-video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
     footer {
       background: #eee;
       padding: 2rem 1rem;
@@ -102,7 +153,7 @@
     <p>顧客が自分で納期を確認できる、製造業向けSaaS <strong>nokiShare</strong></p>
     <p>営業レス・属人化ゼロ・月額3,000円〜</p>
     <div class="center">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmIigmtl_JweXK99zf1Are6SuqNXuDxBuwOK-9mo9WAc-S-g/viewform?usp=dialog" target="_blank" class="cta-btn">無料デモを申し込む</a>
+      <a href="#demo-form" class="cta-btn">問い合わせをする</a>
     </div>
   </header>
 
@@ -133,6 +184,16 @@
       <li>🔁 属人化の解消＆トラブル防止</li>
     </ul>
 
+    <div class="video-section">
+      <div class="video-container">
+        <h2>デモ動画</h2>
+        <video class="demo-video" controls>
+          <source src="demo.mp4" type="video/mp4">
+          お使いのブラウザは動画の再生に対応していません。
+        </video>
+      </div>
+    </div>
+
     <h2>よくある質問（FAQ）</h2>
     <dl class="faq">
       <dt>Q. 難しい設定は必要ですか？</dt>
@@ -143,8 +204,15 @@
       <dd>A. CSVアップロードやAPI連携（相談可）も対応予定です。</dd>
     </dl>
 
-    <div class="center">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmIigmtl_JweXK99zf1Are6SuqNXuDxBuwOK-9mo9WAc-S-g/viewform?usp=dialog" target="_blank" class="cta-btn">無料デモを申し込む</a>
+    <div class="form-section" id="demo-form">
+      <div class="form-container">
+        <h2>無料デモを申し込む</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdmIigmtl_JweXK99zf1Are6SuqNXuDxBuwOK-9mo9WAc-S-g/viewform?embedded=true" 
+                class="embedded-form" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">読み込んでいます…</iframe>
+      </div>
     </div>
   </main>
 
